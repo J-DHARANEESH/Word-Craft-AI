@@ -1,32 +1,17 @@
 # WordCraft AI ✍️
 
-An AI-powered writing tool that helps users summarize, rephrase, and expand Markdown notes using an intuitive Angular interface. Built with:
+## 📚 Project Description
 
-- 🧠 Hugging Face API for summarization, expansion and rephrasing
-- 🔧 Spring Boot backend for API orchestration
-- 🌐 Angular frontend with live Markdown editor and advanced PDF export
+**Word Craft AI** is a full-stack, AI-powered writing assistant that helps users intelligently **summarize**, **rephrase**, and **expand** text within a rich Markdown editor. The application leverages **transformer-based NLP models** via a local Flask API and integrates with a **Spring Boot backend** and a dynamic **Angular frontend** to deliver a seamless writing experience.
 
----
+### ✨ Core Features
 
-## 🚀 Features
+* 🧠 **AI Actions**: Summarize long texts, rephrase sentences, and expand ideas using advanced transformer models (BART, GPT-2, MEETING\_SUMMARY).
+* ✍️ **Live Markdown Editor**: Write with real-time Markdown preview and editing support.
+* 📄 **Custom PDF Export**: Generate professional-looking PDFs with custom heading input and optional date stamp.
+* 🌗 **Dark Mode Support**: Switch between light and dark themes effortlessly.
+* 🌀 **Loader Overlay**: Smooth popup-style loader during AI operations and graceful error handling.
 
-- 🧠 **AI Actions**
-  - Summarize, Rephrase, and Expand content with language models
-- ✍️ **Markdown Editing**
-  - Real-time Markdown editor with live preview
-- 📄 **PDF Export**
-  - Custom popup dialog for entering export heading
-  - Option to include the current date
-  - Separate reusable `PdfDownloadComponent`
-- 🌑 **Dark Mode Toggle**
-  - Seamless light/dark theme switching
-- 🔁 **Routing**
-  - Route navigation with animations (Home ↔ Editor)
-- 🌀 **Loader Overlay**
-  - Popup spinner with typing animation
-  - Error handling with toast or dialog message
-
----
 
 ## 🛠️ Tech Stack
 
