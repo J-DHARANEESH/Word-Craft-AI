@@ -1,0 +1,40 @@
+.home-container {
+    background: url('/assets/images/img2.jpg')
+      no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 2rem;
+  }
+  
+  .home-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    max-width: 600px;
+    font-family: cursive;
+    width: 100%;
+    backdrop-filter: blur(6px);
+  
+    h1 {
+      font-size: 2.75rem;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #4b5563;
+    }
+  
+    button {
+      font-size: 1.1rem;
+      padding: 0.75rem 2rem;
+    }
+  }
+  

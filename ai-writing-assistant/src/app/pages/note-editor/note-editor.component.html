@@ -1,0 +1,60 @@
+<!-- Loader Overlay -->
+<div class="loader-backdrop" *ngIf="isLoading || errorMessage">
+  
+  <!-- Spinner shown directly without box when loading -->
+  <ng-container *ngIf="isLoading && !errorMessage">
+    <div class="loading-spinner">
+      <mat-spinner diameter="50" color="accent"></mat-spinner>
+      <p class="processing-text">
+        Processing
+        <span class="typing-dots"><span></span><span></span><span></span></span>
+      </p>
+    </div>
+  </ng-container>
+
+  <!-- Error container shown only when there's an error -->
+  <div class="loader-container" *ngIf="errorMessage">
+    <mat-icon class="error-icon">error_outline</mat-icon>
+    <p class="error-text">{{ errorMessage }}</p>
+    <button mat-button color="warn" (click)="errorMessage = null">Close</button>
+  </div>
+
+</div>
+
+
+<div class="note-editor-container" [ngClass]="{ 'dark-mode': isDarkMode }">
+  <mat-card class="editor-wrapper">
+    <div class="header">
+      <h1>WordCraft AI ✍️</h1>
+      <div class="theme-switcher">
+        <span class="switch-label">Switch Theme:</span>
+        <mat-slide-toggle [(ngModel)]="isDarkMode" class="theme-toggle" color="accent"
+          aria-label="Toggle dark mode"></mat-slide-toggle>
+      </div>
+    </div>
+
+    <div class="editor-body">
+      <div class="editor-section">
+        <h2>Editor</h2>
+        <textarea class="editor" [(ngModel)]="note" placeholder="Write your Text here..."></textarea>
+
+        <div class="action-buttons">
+          <button mat-raised-button color="primary" (click)="askAI('summarize')">Summarize</button>
+          <button mat-raised-button color="accent" (click)="askAI('rephrase')">Rephrase</button>
+          <button mat-raised-button color="warn" (click)="askAI('expand')">Expand</button>
+          <button mat-raised-button class="pdf-button" (click)="exportAsPDF()">
+            <mat-icon>picture_as_pdf</mat-icon>
+            Export PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="preview-section">
+        <h2>Preview</h2>
+        <div class="preview" #preview>
+          <markdown [data]="note"></markdown>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

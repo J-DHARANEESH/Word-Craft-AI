@@ -1,0 +1,75 @@
+:host {
+    display: block;
+
+    .mat-dialog-container {
+        background-color: var(--dialog-bg, #fff);
+        color: var(--dialog-text, #1a1a1a);
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+    }
+
+    &.dark-theme {
+        --dialog-bg: #1e1e1e;
+        --dialog-text: #f1f1f1;
+    }
+
+    &.light-theme {
+        --dialog-bg: #ffffff;
+        --dialog-text: #1a1a1a;
+    }
+}
+
+// Reusable spacing
+.full-width {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 8px;
+}
+
+mat-form-field {
+    font-size: 14px;
+}
+
+mat-checkbox {
+    font-size: 14px;
+}
+
+mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+    gap: 10px;
+}
+
+button {
+    min-width: 80px;
+}
+
+h2[mat-dialog-title] {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+@media (max-width: 480px) {
+    mat-dialog-content {
+        font-size: 14px;
+    }
+
+    h2[mat-dialog-title] {
+        font-size: 18px;
+    }
+}
+
+::ng-deep .mat-mdc-dialog-container-with-actions .mat-mdc-dialog-content {
+    overflow-y: hidden !important;
+}

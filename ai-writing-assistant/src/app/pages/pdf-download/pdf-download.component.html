@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Export PDF</h2> <mat-dialog-content> <mat-form-field appearance="outline" class="full-width">
+        <mat-label>PDF Heading</mat-label> <input matInput [(ngModel)]="heading" placeholder="Enter PDF heading">
+    </mat-form-field>
+    <mat-checkbox [(ngModel)]="includeDate" name="includeDate">Include date</mat-checkbox>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end"> <button mat-button (click)="close()">Cancel</button> <button mat-flat-button
+        color="primary" (click)="downloadPDF()">Download</button> </mat-dialog-actions>
