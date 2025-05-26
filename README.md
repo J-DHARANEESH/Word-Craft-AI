@@ -127,22 +127,23 @@ Add images to showcase:
 
 * 📝 Editor interface
   
-  ![image](https://github.com/user-attachments/assets/b5b9d7a5-1d5b-43da-92d4-67495456b2fc)
+  ![image](https://github.com/user-attachments/assets/84bc99f3-8c2a-47f3-a051-68442de556ac)
 
 
 * 🌘 Dark mode view
   
-  ![image](https://github.com/user-attachments/assets/d3760825-3280-44c9-ad13-32696e1a52ca)
+  ![image](https://github.com/user-attachments/assets/e167d3be-7454-445a-9069-a0b6145a1577)
 
 
 * 🪄 PDF export dialog
   
-  ![image](https://github.com/user-attachments/assets/91ade8d6-3996-4e05-898d-05cbf2fa0676)
+  ![image](https://github.com/user-attachments/assets/a40c569e-da1f-4634-abb9-d9e93ffb6a6f)
 
 
 * ⏳ Loader popup with error handling
   
-  ![image](https://github.com/user-attachments/assets/9f1b47c3-1cdc-4dd8-8e97-de58361f6e09)
+  ![image](https://github.com/user-attachments/assets/2f38f220-740c-408f-922e-69e2d3b16b9a)
+
 
 ---
 
