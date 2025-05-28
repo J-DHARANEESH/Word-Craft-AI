@@ -154,3 +154,12 @@ MIT License — use freely, modify responsibly.
 
 Developed with ❤️ by **Dharaneesh J**
 
+---
+
+## Contact
+
+For questions or collaboration, please reach out:
+**Email:** j.dharaneesh12@gmail.com<br>
+**GitHub:** https://github.com/J-DHARANEESH
+
+---
